@@ -28,6 +28,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/day"
                 android:text="Tue"
+                android:fontFamily="monospace"
                 android:layout_gravity="center"
                 android:textSize="18sp"
                 android:textColor="@android:color/black"
@@ -38,6 +39,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/date"
                 android:text="18"
+                android:fontFamily="monospace"
                 android:layout_gravity="center"
                 android:textSize="24sp"
                 android:textColor="@color/blue" />
@@ -49,6 +51,7 @@
                 android:layout_gravity="center"
                 android:text="Nov"
                 android:textSize="18sp"
+                android:fontFamily="monospace"
                 android:textColor="@android:color/black"
                 android:alpha="0.5"/>
 
@@ -81,6 +84,7 @@
                     android:textSize="20sp"
                     android:layout_weight="1"
                     android:id="@+id/title"
+                    android:fontFamily="monospace"
                     android:textColor="@android:color/black"/>
 
                 <ImageView
@@ -99,6 +103,7 @@
                 android:alpha="0.5"
                 android:id="@+id/description"
                 android:textSize="14sp"
+                android:fontFamily="monospace"
                 android:textColor="@android:color/black"/>
 
             <TextView
@@ -116,6 +121,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/black"
                 android:text="COMPLETED"
+                android:fontFamily="monospace"
                 android:textSize="12sp"
                 android:id="@+id/status"
                 android:layout_gravity="right"

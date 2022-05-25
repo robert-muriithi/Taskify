@@ -28,6 +28,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:text="Add a task"
+            android:fontFamily="monospace"
             android:textColor="@android:color/black"
             android:textSize="22sp"
             tools:ignore="MissingPrefix" />
@@ -38,11 +39,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:text="Fill the details below to add a task into your TODO"
+            android:text="Fill the details create new a task for your schedule"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:alpha="0.8"
             android:textSize="18sp"
+            android:fontFamily="monospace"
             tools:ignore="MissingPrefix" />
 
         <TextView
@@ -52,6 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Task title"
+            android:fontFamily="monospace"
             tools:ignore="MissingPrefix" />
 
         <EditText
@@ -73,6 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Task description"
+            android:fontFamily="monospace"
             tools:ignore="MissingPrefix" />
 
         <EditText
@@ -94,17 +98,22 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Task date"
+            android:fontFamily="monospace"
             tools:ignore="MissingPrefix" />
 
         <EditText
             android:textSize="14sp"
-            fontPath="fonts/nunito_light.ttf"
+            fontPath="fonts/nuncio_light.ttf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:singleLine="true"
             android:background="@drawable/tv_background"
             android:padding="10dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
             android:id="@+id/taskDate"
             tools:ignore="MissingPrefix" />
 
@@ -115,6 +124,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Task time"
+            android:fontFamily="monospace"
             tools:ignore="MissingPrefix" />
 
         <EditText
@@ -126,6 +136,10 @@
             android:singleLine="true"
             android:background="@drawable/tv_background"
             android:padding="10dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
             android:id="@+id/taskTime"
             tools:ignore="MissingPrefix" />
 
@@ -136,6 +150,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Add an event"
+            android:fontFamily="monospace"
             tools:ignore="MissingPrefix" />
 
         <EditText
@@ -150,13 +165,16 @@
             android:id="@+id/taskEvent"
             tools:ignore="MissingPrefix" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/addTask"
             android:text="Add task"
-            android:background="@drawable/tv_background"
-            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:fontFamily="monospace"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/black"
             android:layout_marginTop="40dp" />
 
     </LinearLayout>

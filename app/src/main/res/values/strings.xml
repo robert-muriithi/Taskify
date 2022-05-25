@@ -2,4 +2,10 @@
     <string name="app_name">Tasks Reminder</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete_confirmation">Confirm to delete</string>
+    <string name="sureToDelete">Deleting a task cannot be undone. Are you sure you want to delete?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="confirmation">Completed the task</string>
+    <string name="sureToMarkAsComplete">Are you sure you want to mark this task as completed?</string>
 </resources>

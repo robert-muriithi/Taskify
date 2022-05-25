@@ -3,6 +3,7 @@ package com.roberts.tasksreminder.data.local
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.io.Serializable
 
 @Entity(tableName = "tasks_table")
 data class TaskItem(
@@ -18,7 +19,7 @@ data class TaskItem(
     var event: String,
     @ColumnInfo(name = "column_status")
     var status: Boolean
-) {
+) : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id: Int? = null
 }
