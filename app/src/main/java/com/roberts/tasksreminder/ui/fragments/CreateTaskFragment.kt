@@ -20,11 +20,7 @@ import java.util.*
 
 
 @AndroidEntryPoint
-class CreateTaskFragment(private val listener : AddTask) : BottomSheetDialogFragment() {
-
-    companion object {
-        const val TAG = "CreateTaskFragment"
-    }
+class CreateTaskFragment : BottomSheetDialogFragment() {
 
     var cal = Calendar.getInstance()
     private lateinit var binding: FragmentCreateTaskBinding
@@ -54,7 +50,7 @@ class CreateTaskFragment(private val listener : AddTask) : BottomSheetDialogFrag
 
                 else -> {
                     val task = TaskItem(title, desc, date, time, event, false)
-                    listener.saveTask(task)
+                    //
                 }
             }
 

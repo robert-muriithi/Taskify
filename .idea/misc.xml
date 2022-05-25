@@ -9,8 +9,10 @@
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/drawable/tv_background.xml" value="0.164" />
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/layout/fragment_all_tasks.xml" value="0.1859375" />
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/layout/fragment_create_task.xml" value="0.5" />
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/layout/task_card.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/menu/options_menu.xml" value="0.2" />
       </map>
     </option>
   </component>

@@ -6,8 +6,9 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.roberts.tasksreminder.data.local.TaskItem
 import com.roberts.tasksreminder.databinding.TaskCardBinding
+import com.roberts.tasksreminder.ui.viewmodels.MainViewModel
 
-class TaskAdapter : ListAdapter<TaskItem, TaskAdapter.TaskViewHolder>(TaskDiffUtil) {
+class TaskAdapter (private  val viewModel: MainViewModel): ListAdapter<TaskItem, TaskAdapter.TaskViewHolder>(TaskDiffUtil) {
     inner class TaskViewHolder(private var binding: TaskCardBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(task: TaskItem) {
@@ -16,6 +17,10 @@ class TaskAdapter : ListAdapter<TaskItem, TaskAdapter.TaskViewHolder>(TaskDiffUt
             binding.time.text = task.time
             binding.description.text = task.description
             binding.status.text = task.status.toString()
+
+            binding.options.setOnClickListener {
+
+            }
         }
     }
 

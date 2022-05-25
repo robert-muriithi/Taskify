@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/allTasksFragment">
+    <fragment
+        android:id="@+id/allTasksFragment"
+        android:name="com.roberts.tasksreminder.ui.fragments.AllTasksFragment"
+        android:label="fragment_all_tasks"
+        tools:layout="@layout/fragment_all_tasks" >
+        <action
+            android:id="@+id/action_allTasksFragment_to_createTaskFragment"
+            app:destination="@id/createTaskFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/createTaskFragment"
+        android:name="com.roberts.tasksreminder.ui.fragments.CreateTaskFragment"
+        android:label="CreateTaskFragment" >
+        <action
+            android:id="@+id/action_createTaskFragment_to_allTasksFragment"
+            app:destination="@id/allTasksFragment" />
+    </dialog>
 </navigation>
