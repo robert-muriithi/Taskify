@@ -26,3 +26,7 @@ The main aim to build this app is to learn the following topic:
 <img src="screenshots/Screenshot_4.png" width=250/>
 <img src="screenshots/Screenshot_5.png" width=250/>
   </p>
+
+## Support
+- Found this project useful ❤️? Support by clicking the ⭐️ button on the upper right of this page. ✌
+- Feel free to contribute in any way to the project from typos in docs to code review are all welcome.
