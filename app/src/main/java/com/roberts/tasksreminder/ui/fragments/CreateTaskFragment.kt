@@ -3,6 +3,7 @@ package com.roberts.tasksreminder.ui.fragments
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
+import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -30,6 +31,7 @@ class CreateTaskFragment : BottomSheetDialogFragment(), ToEditable {
         private const val TAG = "CreateTaskFragment"
     }
 
+    private val status = "UPCOMING"
     var cal = Calendar.getInstance()
     private lateinit var binding: FragmentCreateTaskBinding
     private val viewModel: MainViewModel by viewModels()
@@ -58,7 +60,7 @@ class CreateTaskFragment : BottomSheetDialogFragment(), ToEditable {
                 event.isEmpty() -> binding.taskEvent.error = "Describe the event"
 
                 else -> {
-                    val task = TaskItem(title, desc, date, time, event, false)
+                    val task = TaskItem(title, desc, date, time, event, status.toBoolean())
                     viewModel.insert(task)
                     dismiss()
                     Log.d(TAG, "onCreateView: $task")
@@ -66,7 +68,6 @@ class CreateTaskFragment : BottomSheetDialogFragment(), ToEditable {
             }
 
         }
-
         binding.taskDate.setOnClickListener {
             val datePickerDialog = DatePickerDialog(
                 requireContext(),
@@ -84,8 +85,9 @@ class CreateTaskFragment : BottomSheetDialogFragment(), ToEditable {
 
             )
             datePickerDialog.show()
-            datePickerDialog.getButton(DatePickerDialog.BUTTON_POSITIVE).setTextColor(Color.BLUE)
-            datePickerDialog.getButton(DatePickerDialog.BUTTON_NEGATIVE).setTextColor(Color.BLUE)
+            datePickerDialog.getButton(DatePickerDialog.BUTTON_POSITIVE).setTextColor(Color.BLACK)
+            datePickerDialog.getButton(DatePickerDialog.BUTTON_NEGATIVE).setTextColor(Color.BLACK)
+            datePickerDialog.datePicker.minDate = System.currentTimeMillis()
 
         }
 
@@ -97,6 +99,11 @@ class CreateTaskFragment : BottomSheetDialogFragment(), ToEditable {
                     cal.set(Calendar.MINUTE, minute)
                     val myFormat = "HH:mm"
                     val sdf = SimpleDateFormat(myFormat, Locale.US)
+                    if (cal.get(Calendar.AM_PM) == Calendar.AM) {
+                        binding.taskTime.text = sdf.format(cal.time).toEditable()
+                    } else {
+                        binding.taskTime.text = "${sdf.format(cal.time)} PM".toEditable()
+                    }
                     binding.taskTime.text = sdf.format(cal.time).toEditable()
                 },
                 cal.get(Calendar.HOUR_OF_DAY),
@@ -104,8 +111,11 @@ class CreateTaskFragment : BottomSheetDialogFragment(), ToEditable {
                 true
             )
             timePickerDialog.show()
-            timePickerDialog.getButton(TimePickerDialog.BUTTON_POSITIVE).setTextColor(Color.BLUE)
-            timePickerDialog.getButton(TimePickerDialog.BUTTON_NEGATIVE).setTextColor(Color.BLUE)
+
+            timePickerDialog.getButton(TimePickerDialog.BUTTON_POSITIVE).setTextColor(Color.BLACK)
+            timePickerDialog.getButton(TimePickerDialog.BUTTON_NEGATIVE).setTextColor(Color.BLACK)
+
+
         }
         val mBottomSheetBehaviorCallback: BottomSheetCallback = object : BottomSheetCallback() {
             override fun onStateChanged(bottomSheet: View, newState: Int) {
@@ -117,10 +127,11 @@ class CreateTaskFragment : BottomSheetDialogFragment(), ToEditable {
             override fun onSlide(bottomSheet: View, slideOffset: Float) {}
         }
 
-
-
-
         return view
+    }
+
+    override fun show(applicationContext: Context?, tag: String?) {
+
     }
 
 }

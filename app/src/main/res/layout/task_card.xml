@@ -15,8 +15,9 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:background="@color/green"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
@@ -28,10 +29,11 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/day"
                 android:text="Tue"
+                android:textStyle="bold"
                 android:fontFamily="monospace"
                 android:layout_gravity="center"
                 android:textSize="18sp"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:alpha="0.5"/>
 
             <TextView
@@ -42,7 +44,7 @@
                 android:fontFamily="monospace"
                 android:layout_gravity="center"
                 android:textSize="24sp"
-                android:textColor="@color/blue" />
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -50,9 +52,10 @@
                 android:id="@+id/month"
                 android:layout_gravity="center"
                 android:text="Nov"
+                android:textStyle="bold"
                 android:textSize="18sp"
                 android:fontFamily="monospace"
-                android:textColor="@android:color/black"
+                android:textColor="@color/white"
                 android:alpha="0.5"/>
 
         </LinearLayout>
@@ -109,11 +112,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text=""
+                tools:text="11:50"
+                android:fontFamily="monospace"
                 android:singleLine="true"
                 android:alpha="0.5"
                 android:id="@+id/time"
-                android:textSize="12sp"
+                android:textSize="16sp"
                 android:textColor="@android:color/black"/>
 
             <TextView

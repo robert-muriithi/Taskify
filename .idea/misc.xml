@@ -6,14 +6,19 @@
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/drawable/btn_bg.xml" value="0.164" />
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1555" />
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/drawable/ic_calender.xml" value="0.1555" />
+        <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/drawable/ic_checked_success.xml" value="0.115" />
+        <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/drawable/ic_more.xml" value="0.1595" />
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/drawable/ic_tasks.xml" value="0.1555" />
+        <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/drawable/layout_bg.xml" value="0.115" />
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/drawable/tv_background.xml" value="0.164" />
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/layout/dialog_completed_theme.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/layout/fragment_all_tasks.xml" value="0.1859375" />
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/layout/fragment_create_task.xml" value="0.33" />
-        <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/layout/task_card.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/layout/task_card.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/menu/options_menu.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/TasksReminder/app/src/main/res/menu/toolbar_menu.xml" value="0.2" />
       </map>
     </option>
   </component>
